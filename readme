@@ -1,0 +1,9 @@
+install with:
+
+git clone [url] ~/.vim
+
+ln -nfs ~/.vim/vimrc ~/.vimrc
+ln -nfs ~/.vim/gvimrc ~/.gvimrc
+-------------------------------
+
+
