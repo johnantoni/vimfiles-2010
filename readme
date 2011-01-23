@@ -6,4 +6,13 @@ ln -nfs ~/.vim/vimrc ~/.vimrc
 ln -nfs ~/.vim/gvimrc ~/.gvimrc
 -------------------------------
 
+build:
+
+either get from vim.org and install with hg
+or download from my vim mirror on github with
+
+git clone git://github.com/johnantoni/vim.git
+cd vim/src
+./configure --with-features=huge
+make && sudo make install
 
