@@ -80,3 +80,4 @@ autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
+set foldcolumn=0        " width of foldcolumn on sidebar
