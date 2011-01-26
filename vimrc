@@ -47,6 +47,8 @@ set laststatus=2                  " Show the status line all the time
 
 set statusline=%{GitBranch()}     " Git-Vim
 
+set cursorline                    " Highlight line editing
+
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
