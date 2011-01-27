@@ -66,10 +66,7 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
-" Uncomment to use Jamis Buck's file opening plugin
-"map <leader>t :FufFile<cr> 
-nmap <leader>ff :FufFile ./<CR> 
-"nnoremap <silent> s<C-k> :FufFile<CR>
+nmap <silent> <Leader>t :CommandT<cr>
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :

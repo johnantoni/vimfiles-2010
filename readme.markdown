@@ -29,3 +29,12 @@ If however you want to re-configure later, run this to clean the SRC directory b
 
     make distclean
 
+** Keys
+
+    \    leader key
+    i    switch to insert mode
+    esc  switch out of insert mode
+
+With the CommandT plugin installed you can do a TextMate go-to file with \t
+After which you can start typing the file your after and it'll zero in on it
+
