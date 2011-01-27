@@ -13,6 +13,12 @@ or download from my vim mirror on github with
 
 git clone git://github.com/johnantoni/vim.git
 cd vim/src
-./configure --with-features=huge
+./configure --with-features=huge --enable-rubyinterp
 make && sudo make install
+
+if you encounter an error on build, run the command
+below before you re-configure & build:
+
+make distclean
+
 
