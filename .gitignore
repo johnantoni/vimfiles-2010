@@ -33,5 +33,10 @@ Makefile
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Ancilliary files   #
+######################
 .netrwhist
+.VimballRecord
+*.swp
 
