@@ -78,5 +78,5 @@ Switch windows with CTRL+ww
 
 ## Rebuild Help Docs
 
-:helptags ~/.vim/doc
+    :helptags ~/.vim/doc
 
