@@ -1,11 +1,12 @@
 ## Introduction
 
+Download here ~ [vimfiles](https://github.com/johnantoni/vimfiles)
+
 What you see is my own personal VIM configuration, with all manner of plugins, color formats and cool status messages.
 
 Feel free to fork and copy it as you want, you can even drop me a line to suggest improvements.
 
 Best,
-
 
 ## Install Config
 
@@ -47,10 +48,10 @@ If however you want to re-configure later, run this to clean the SRC directory b
 
 ## MacVim, HomeBrew and PeepOpen
 
-For OSX users i'd recommend installing (MacVIM)[http://code.google.com/p/macvim/] rather than using the Terminal client.
+For OSX users i'd recommend installing [MacVIM](http://code.google.com/p/macvim/) rather than using the Terminal client.
 Along with that install [HomeBrew](http://mxcl.github.com/homebrew/), it's a really efficient package manager for OSX.
 
-And if you want the GoTo file that TextMate has (and CommandT provides) install (PeepOpen)[http://peepcode.com/products/peepopen] from PeepCode, reallu awesome (and support already baked into this config)
+And if you want the GoTo file that TextMate has (and CommandT provides) install [PeepOpen](http://peepcode.com/products/peepopen) from PeepCode, really awesome (and support already baked into this config)
 
 ## Keys
 
