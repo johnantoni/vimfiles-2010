@@ -54,3 +54,13 @@ To install the packaged .gitignore file to your global git config, do:
 
     git config --global core.excludesfile ~/.vim/.gitignore
 
+## NERDTree
+
+Open with :NERDTree
+Create new file pressing 'a'
+Switch windows with CTRL+ww
+
+## Rebuild Help Docs
+
+:helptags ~/.vim/doc
+
