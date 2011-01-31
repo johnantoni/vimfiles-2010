@@ -48,6 +48,7 @@ set laststatus=2                  " Show the status line all the time
 set statusline=%{GitBranch()}     " Git-Vim
 
 set cursorline                    " Highlight line editing
+set foldcolumn=1
 
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
@@ -66,7 +67,7 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
-nmap <silent> <Leader>t :CommandT<cr>
+nmap <silent> <Leader>t :NERDTree<cr>
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
