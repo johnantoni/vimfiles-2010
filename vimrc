@@ -62,18 +62,32 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*Cap
 " Or use vividchalk
 colorscheme topfunky-light
 
-" Tab mappings.
-map <leader>tt :tabnew<cr>
+" Smart way to move btw. windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" leader key is \
+
+" Close the current buffer
+map <leader>bd :Bclose<cr>
+
+" Close all the buffers
+map <leader>ba :1,300 bd!<cr>
+
+" Use the arrows to something usefull
+" map <right> :bn<cr>
+" map <left> :bp<cr>
+
+" Tab configuration
+map <leader>tn :tabnew<cr>
 map <leader>te :tabedit
 map <leader>tc :tabclose<cr>
-map <leader>to :tabonly<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprevious<cr>
-map <leader>tf :tabfirst<cr>
-map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
-nmap <silent> <Leader>t :NERDTree<cr>
+" Map Ctrl+L to toggle NERDTree
+nnoremap <silent> <C-L> :NERDTreeToggle<cr><C-L>
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
