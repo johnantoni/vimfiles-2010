@@ -88,6 +88,14 @@ map <leader>tm :tabmove
 
 " Map Ctrl+L to toggle NERDTree
 nnoremap <silent> <C-L> :NERDTreeToggle<cr><C-L>
+" Remember 'm' to open node/file options
+" and 'm'+'a' with trailing / on node name to create dir
+" or :!mkdir (dir)
+
+" Windows
+" ctrl+w s  - add window
+" ctrl+w c  - close window
+" ctrl+w arrow keys - navigate to window
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
