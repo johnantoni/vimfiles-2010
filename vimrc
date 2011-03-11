@@ -1,4 +1,4 @@
-" Copy or symlink to ~/.vimrc or ~/_vimrc.
+" ########################################
 
 set nocompatible                  " Must come first because it changes other options.
 
@@ -55,54 +55,50 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
-
-" Useful status information at bottom of screen
+" useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
-" Or use vividchalk
 colorscheme topfunky-light
+" or use vividchalk
 
-" Smart way to move btw. windows
+" ########################################
+
+" smart way to move btw. windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" leader key is \
-
-" Close the current buffer
+" close the current buffer
 map <leader>bd :Bclose<cr>
 
-" Close all the buffers
+" close all the buffers
 map <leader>ba :1,300 bd!<cr>
 
-" Use the arrows to something usefull
+" use the arrows to something usefull
 " map <right> :bn<cr>
 " map <left> :bp<cr>
 
-" Tab configuration
+" tab configuration
 map <leader>tn :tabnew<cr>
 map <leader>te :tabedit
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 
-" Map Ctrl+L to toggle NERDTree
-nnoremap <silent> <C-L> :NERDTreeToggle<cr><C-L>
-" Remember 'm' to open node/file options
-" and 'm'+'a' with trailing / on node name to create dir
-" or :!mkdir (dir)
+" nerdtree
+if exists(":NERDTree")
+  " map Ctrl+L to toggle NERDTree
+  nnoremap <silent> <C-L> :NERDTreeToggle<cr><C-L>
+endif
 
-" Windows
-" ctrl+w s  - add window
-" ctrl+w c  - close window
-" ctrl+w arrow keys - navigate to window
-
-" Controversial...swap colon and semicolon for easier commands
+" controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
 "nnoremap : ;
 
 "vnoremap ; :
 "vnoremap : ;
+
+" ########################################
 
 " Automatic fold settings for specific files. Uncomment to use.
 autocmd FileType ruby setlocal foldmethod=syntax
@@ -111,3 +107,18 @@ autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
+" ########################################
+
+" windows
+" ctrl+w s  - add window
+" ctrl+w c  - close window
+" ctrl+w arrow keys - navigate to window
+
+" NERDTree
+" Remember 'm' to open node/file options
+" and 'm'+'a' with trailing / on node name to create dir
+" or :!mkdir (dir)
+
+" leader key is \
+
+" usage: copy or symlink to ~/.vimrc or ~/_vimrc.
